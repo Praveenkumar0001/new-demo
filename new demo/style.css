@@ -1,0 +1,226 @@
+*{
+   margin:0;
+   padding: 0; 
+   box-sizing: border-box;
+   font-family: 'poppins';
+   list-style: none;
+   text-decoration: none;
+   font-size: 17px;
+   color: #333;
+   outline: none;
+}
+:root{
+    --color:orangered;
+}
+button{
+    padding: 8px 20px;
+    border: none;
+    background-color: var(--color);
+    box-shadow: 6px 6px 0px -1px #373737;
+    width: fit-content;
+    transition: all ease-in-out .6s;
+    border-radius: 2rem;
+}
+button:hover{
+    background-color: #373737;
+    box-shadow: 6px 6px 0px -1px var(--color);
+}
+button a{
+    color: #fff;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-size: 0.9rem;
+}
+.container{
+    width: 100%;
+    height: 100%;
+
+}
+.container .header{
+    width: 100%;
+    background-color: #fff;
+
+}
+nav{
+    width: 100%; 
+    height: 100%;
+   display:flex;
+   justify-content: space-around;
+   padding:0 10%;
+   position: fixed;
+   z-index: 999;
+   background-color: transparent;
+}
+nav ul li{
+    display:inline-block;
+    margin: 0 20px;
+    position: relative;
+    padding-bottom:5px;
+}
+nav ul li a{
+    font-size: 0.8rem;
+    text-transform:uppercase;
+    letter-spacing: 3px;
+    font-weight: 600;
+    padding: 5px 5px;
+}
+nav ul li::before{
+    position: relative;
+    content: "";
+    width: 0;
+    height: 2px;
+    background-color: var(--color);
+    bottom: 0;
+    transform: .4 all ease-in-out;
+}
+nav ul li:hover:before{
+    width: 100%;
+}
+nav .logo a,nav .logo i{
+    font-size: 1.6rem;
+    letter-spacing: 2.5px;
+    font-weight: 700;
+}
+nav .toggle{
+    display: none;
+}
+.main{
+    min-height: 700px;
+    width: 100px;
+    padding: 10%;
+    padding-top: 130px;
+    padding-bottom: 5%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    overflow: hidden;
+}
+.main .content{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+}
+.main .content h4{
+    font-family: monospace;
+    text-transform: uppercase;
+    font-weight: 600;
+    letter-spacing: 3px;
+    margin-bottom: 5px;
+
+}
+.main .content h4,.main .content h4.auto-input{
+    font-size:3.5rem;
+    letter-spacing: 3px;
+    font-weight: bolder;
+    margin-bottom: 1rem;
+
+}
+.main .content{
+    letter-spacing: 2px;
+    margin-bottom: 1rem;
+
+}
+.main .content button a{
+    color: white;
+    letter-spacing: 1px;
+    font-weight:600;
+    font-size: 0.9rem;
+    
+
+}
+.main .image{
+    display: flex;
+    justify-content: end;
+    position: relative;
+}
+
+    .main .image img{
+    height: 80%;
+    width:70%;
+    z-index: 9;
+
+}
+.main .image .squre{
+    position: absolute;
+    height: 600px;
+    width: 1000px;
+    background-color: rgb(254, 196, 72,0.4);
+    transform:rotate(-125deg);
+    border-radius: 50px;
+    left:45%;
+    bottom: 10%;
+    z-index: 1;
+
+}
+
+@media(max-width=1200px){
+    nav {
+        padding: 0 5%;
+    }
+    nav ul li {
+        margin:0 5px;
+    }
+    .main{
+        padding: 0 5%;
+    }
+}
+@media(max-width:900px){
+    nav .toggle{
+        display: block;
+
+
+    }
+    nav .toggle i{
+        font-size: 25px;
+    }
+    nav ul{
+      position:absolute;
+      top: 100%;
+      right: 0;
+      width: 100%;
+      background-color: white;
+      border-bottom: rgb(57, 55, 55) 1.5px solid;
+      border-top:rgb(47, 45, 45) 1.5px solid;
+      display: flex;
+      flex-direction: column;
+      padding: 0;
+      display: none;
+      z-index: 999;
+    }
+    nav ul li {  
+        display:block;
+        line-height:50px;
+        border: lid white;
+        margin: 0;
+        padding-left: 30px;
+    }
+nav ul li::before {
+    display: flex;
+
+}
+.show{
+    display: block;
+
+}
+.contact{
+    display: none;
+}
+.main{
+    flex-direction: column;
+    gap: 50px;
+}
+.main .content{
+  text-align: center;
+
+}
+    .main .content h1,.main .content h1 .auto-input{
+        font-size: 2rem;
+    }
+    .main .image{
+        justify-content: center;
+        align-items: center;
+
+    }
+}

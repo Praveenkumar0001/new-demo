@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Entireserve</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+</head>
+<body>
+    <div class="container">
+       
+        <div class="header">
+             <nav>
+            <div class="logo">
+                <a href="#"><span><i class="fa-solid fa-arrows-split-up-and-left"></i>Moody</span></a>
+            </div>
+                <ul>
+                    <li> <a href="/">Home</a></li>
+                    <li> <a href="/">Services</a></li>
+                        
+                    <li> <a href="/">Blogs</a></li>
+                    <li> <a href="/">Mentoring</a></li>
+                    <li> <a href="/">Community</a></li>
+                    <li><a href="/">Contect</a></li>
+                </ul>
+                <div class="contact">
+                    <button><a href="#">Contact us</a></button>
+                </div>
+                <div class="toggle">
+                   <i class="fa fa-bars"></i>
+                </div>
+            </nav>
+        </div>
+        <div class="main">
+            <div class="content">
+                <h4>Heyy, I'm </h4>
+                <h1>
+                    I'm a <span class="auto-input"></span>
+                </h1>
+                <p>Based in los Angeles California</p>
+                <button><a href="/">Let's Start</a></button>
+            </div>
+            <div class="image">
+                <img href="front.jpg" alt="image error">
+                <div class="squre"></div>
+            </div>
+        </div>
+        <div class="about">
+            <div class="image">
+                <img src="" alt="">
+            </div>
+            <div class="conent">
+                <h2> I'm Freelancer frontend Developer with 6 months of experience</h2>
+                <p>I'm Freelancer frontend Developer with 6 months of experience.I'm from Kannauj,UP.I like to work with new people .</p>
+                <div class="Project-client">
+                    <div class="project">
+                           <span>250+</span>
+                    <h4>Project Completed</h4>
+                    </div>
+                 <div class="client">
+                    <span>190+</span>
+                    <h4>Happy Client</h4>
+                 </div>
+                </div>
+                <div class="buttons">
+                    <button><a href="#">Contact Me</a></button>
+                    <button><a href="#">Protfolio</a></button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.10/typed.js"></script>
+    <script>
+        let typed=new Typed("auto-input",{
+        string:["Desiner","Developer"],
+        typeSpeed:50,
+        backSpeed:50,
+        loop:true
+        })
+    </script>
+    <script>
+        let toggle=document.querySelector(".toggle");
+        let navbar=document.querySelector("nav ul");
+          
+        toggle.onclick=()=>{
+            navbar.classList.toggle("show");
+        }
+
+    </script>
+</body>
+</html>
